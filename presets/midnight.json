@@ -1,0 +1,9 @@
+{
+  "id": "midnight",
+  "name": "Midnight · 午夜发布",
+  "use_for": ["产品发布", "技术演示", "路演"],
+  "canvas": {"width": 1280, "height": 720},
+  "colors": {"background": "#101B25", "foreground": "#F2F7F4", "muted": "#A7BAB8", "accent": "#A9EACB", "secondary": "#AAC6F7"},
+  "typography": {"title_pt": 36, "body_pt": 20, "font_candidates": ["Aptos", "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei"]},
+  "layout": {"safe_margin_px": 64, "principle": "大标题与大留白，单页突出一个观点或一组证据"}
+}

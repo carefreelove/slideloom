@@ -1,0 +1,9 @@
+{
+  "id": "editorial",
+  "name": "Editorial · 纸上观点",
+  "use_for": ["策略报告", "品牌提案", "研究解读"],
+  "canvas": {"width": 1280, "height": 720},
+  "colors": {"background": "#F6F1E7", "foreground": "#272822", "muted": "#6D6C60", "accent": "#B53D2A", "secondary": "#546B54"},
+  "typography": {"title_pt": 36, "body_pt": 20, "font_candidates": ["Georgia", "Noto Serif CJK SC", "Songti SC", "SimSun"]},
+  "layout": {"safe_margin_px": 64, "principle": "以文字层级和页边距建立杂志感，让结论紧邻证据"}
+}
