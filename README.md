@@ -1,4 +1,8 @@
 <p align="center">
+  <strong>简体中文</strong> · <a href="README.en.md">English</a>
+</p>
+
+<p align="center">
   <img src="assets/hero.png" width="100%" alt="SlideLoom：把想法，织成好演示。叙事分镜、视觉预设、逐页检查。" />
 </p>
 
@@ -53,6 +57,8 @@ git clone https://github.com/carefreelove/slideloom.git .agents/skills/slideloom
 已安装旧版时，将 skill 文件夹改为 `slideloom`，并改用 `$slideloom` 调用。
 
 也可以放入个人目录 `~/.agents/skills/slideloom`。已有同名目录时先检查，不直接覆盖。未被发现时重启 Codex。安装机制见 [OpenAI 官方文档](https://learn.chatgpt.com/docs/build-skills)。
+
+下方 Python 命令均在本仓库根目录执行。按上面的项目级方式安装后，先运行 `cd .agents/skills/slideloom`。
 
 ## 三个工作方式
 
@@ -119,6 +125,8 @@ python3 scripts/inspect_pptx.py deck.pptx > inspection.json
 
 ```text
 slideloom/
+├── README.md                  # 中文说明
+├── README.en.md               # English guide
 ├── SKILL.md                   # agent 工作入口
 ├── agents/openai.yaml         # Codex 展示信息
 ├── presets/                   # 三种 Design DNA
@@ -139,3 +147,9 @@ python3 -B scripts/deck_doctor.py examples/style-showcase.pptx --expected-slides
 ```
 
 GitHub Actions 在 Python 3.10 / 3.12 上执行离线测试，并检查仓库中的样稿。素材与样稿不含用户演示数据；安装或运行此 skill 不会自动向 GitHub 或其他服务上传资料。
+
+---
+
+<p align="center">
+  <strong>简体中文</strong> · <a href="README.en.md">English</a>
+</p>
