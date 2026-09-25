@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1600" height="650" viewBox="0 0 1600 650" role="img" aria-labelledby="title desc">
-  <title id="title">PPTSKILL · 好内容，值得好呈现</title>
+  <title id="title">SlideLoom · 把想法，织成好演示</title>
   <desc id="desc">carefreelove 的演示文稿制作 skill，提供叙事分镜、视觉预设和逐页检查。</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#101B25"/><stop offset="1" stop-color="#172B31"/></linearGradient>
@@ -8,8 +8,8 @@
   <rect width="1600" height="650" rx="22" fill="url(#bg)"/>
   <g font-family="Arial, Helvetica, sans-serif">
     <text x="78" y="83" fill="#A9EACB" font-size="21" letter-spacing="4">CAREFREELOVE / PRESENTATION CRAFT</text>
-    <text x="68" y="273" fill="#F2F7F4" font-size="176" font-weight="700" letter-spacing="-10">PPTSKILL</text>
-    <text x="80" y="365" fill="#A9EACB" font-size="46" font-family="Arial Unicode MS, PingFang SC, Microsoft YaHei, sans-serif">好内容，值得好呈现。</text>
+    <text x="68" y="273" fill="#F2F7F4" font-size="176" font-weight="700" letter-spacing="-10">SlideLoom</text>
+    <text x="80" y="365" fill="#A9EACB" font-size="46" font-family="Arial Unicode MS, PingFang SC, Microsoft YaHei, sans-serif">把想法，织成好演示。</text>
     <text x="83" y="425" fill="#A7BAB8" font-size="23" font-family="Arial Unicode MS, PingFang SC, Microsoft YaHei, sans-serif">叙事有节奏 · 风格有选择 · 交付有依据</text>
     <path d="M80 503H1520" stroke="#34484A"/>
     <text x="82" y="565" fill="#F2F7F4" font-size="20" letter-spacing="2">01 / DIRECTOR MODE</text>

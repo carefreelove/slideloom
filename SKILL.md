@@ -1,9 +1,9 @@
 ---
-name: pptskill
+name: slideloom
 description: 创建、修改和检查可编辑的 PowerPoint（.pptx），将资料整理成有叙事节奏的中文演示稿。支持按时长分镜、视觉风格预设、模板保留和逐页检查；仅需大纲时不擅自生成文件。
 ---
 
-# PPTSKILL
+# SlideLoom
 
 将用户的主题、资料或现有演示稿转为适合受众的演示内容，默认交付可编辑的 `.pptx`。用户明确只需大纲、讲稿、审阅意见或其他格式时，按其要求交付。
 
@@ -48,7 +48,7 @@ description: 创建、修改和检查可编辑的 PowerPoint（.pptx），将资
 需要检查 `.pptx` 页数、文本、备注和原生对象数量时，运行随附的只读脚本。将下面路径替换为 skill 的实际目录及输入文件路径：
 
 ```bash
-python3 /path/to/pptskill/scripts/inspect_pptx.py /path/to/deck.pptx > /path/to/work/deck-inspection.json
+python3 /path/to/slideloom/scripts/inspect_pptx.py /path/to/deck.pptx > /path/to/work/deck-inspection.json
 ```
 
 脚本只读取文件，不渲染，也不能判定视觉质量、文本溢出或所有内容是否可编辑。无法使用渲染器时完成结构与内容检查，并明确告知尚未验证页面外观。仅在实际打开并查看 PowerPoint 后才声称完成 PowerPoint 验证。
@@ -56,7 +56,7 @@ python3 /path/to/pptskill/scripts/inspect_pptx.py /path/to/deck.pptx > /path/to/
 需要页数约束、候选占位文本、文字密度等可执行检查时，使用 [Deck Doctor](references/deck-doctor.md)：
 
 ```bash
-python3 /path/to/pptskill/scripts/deck_doctor.py /path/to/deck.pptx --expected-slides 8
+python3 /path/to/slideloom/scripts/deck_doctor.py /path/to/deck.pptx --expected-slides 8
 ```
 
 只在用户确实要求 8 页时传入该值。逐条解释诊断证据，对教学示例中的占位词、全屏照片和重复品牌文字保留人工判断，不机械删除内容。不以无告警或某个分数宣称设计优秀。

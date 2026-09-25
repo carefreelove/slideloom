@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/hero.png" width="100%" alt="PPTSKILL：好内容，值得好呈现。叙事分镜、视觉预设、逐页检查。" />
+  <img src="assets/hero.png" width="100%" alt="SlideLoom：把想法，织成好演示。叙事分镜、视觉预设、逐页检查。" />
 </p>
 
 <p align="center">
@@ -10,12 +10,14 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/carefreelove/pptskill/actions/workflows/quality.yml"><img src="https://github.com/carefreelove/pptskill/actions/workflows/quality.yml/badge.svg" alt="Skill checks" /></a>
+  <a href="https://github.com/carefreelove/slideloom/actions/workflows/quality.yml"><img src="https://github.com/carefreelove/slideloom/actions/workflows/quality.yml/badge.svg" alt="Skill checks" /></a>
 </p>
 
 **把资料组织成观点，把观点做成可编辑的幻灯片。**
 
-PPTSKILL 是 [carefreelove](https://github.com/carefreelove) 打磨的 Codex 演示文稿 skill。它把叙事、中文排版与交付检查放进同一条工作流，适合产品发布、经营汇报、课程讲解，也适合只修改现有 PPT 的几页。
+**SlideLoom（幻灯织机）**，把零散资料织成有节奏的演示。
+
+SlideLoom 是 [carefreelove](https://github.com/carefreelove) 打磨的 Codex 演示文稿 skill。它把叙事、中文排版与交付检查放进同一条工作流，适合产品发布、经营汇报、课程讲解，也适合只修改现有 PPT 的几页。
 
 ## 看见风格
 
@@ -37,18 +39,20 @@ PPTSKILL 是 [carefreelove](https://github.com/carefreelove) 打磨的 Codex 演
 
 ```bash
 mkdir -p .agents/skills
-git clone https://github.com/carefreelove/pptskill.git .agents/skills/pptskill
+git clone https://github.com/carefreelove/slideloom.git .agents/skills/slideloom
 ```
 
 然后把资料交给 Codex：
 
 ```text
-使用 $pptskill，把附件整理成一份 8 页中文产品发布稿。
+使用 $slideloom，把附件整理成一份 8 页中文产品发布稿。
 面向潜在客户，讲述时间 6 分钟，选择 midnight 风格。
 先组织逐页重点，再生成可编辑 PPT。缺失数据不要编造。
 ```
 
-也可以放入个人目录 `~/.agents/skills/pptskill`。已有同名目录时先检查，不直接覆盖。未被发现时重启 Codex。安装机制见 [OpenAI 官方文档](https://learn.chatgpt.com/docs/build-skills)。
+已安装旧版时，将 skill 文件夹改为 `slideloom`，并改用 `$slideloom` 调用。
+
+也可以放入个人目录 `~/.agents/skills/slideloom`。已有同名目录时先检查，不直接覆盖。未被发现时重启 Codex。安装机制见 [OpenAI 官方文档](https://learn.chatgpt.com/docs/build-skills)。
 
 ## 三个工作方式
 
@@ -57,7 +61,7 @@ git clone https://github.com/carefreelove/pptskill.git .agents/skills/pptskill
 先明确每页的目的、证据和视觉，再分配讲述时间。支持从完整资料压缩成短演讲，也支持先交大纲。缩短时保留影响结论的限制条件，不靠删掉反面证据来增强说服力。
 
 ```text
-使用 $pptskill，把这份材料组织成 5 分钟的汇报。
+使用 $slideloom，把这份材料组织成 5 分钟的汇报。
 每页给出目的、证据、视觉形式和预计用时，先只交分镜。
 ```
 
@@ -68,7 +72,7 @@ git clone https://github.com/carefreelove/pptskill.git .agents/skills/pptskill
 三个预设提供配色、字号起点和布局原则。已有模板时优先保留模板；中文与中英混排都要检查实际字体和换行。
 
 ```text
-使用 $pptskill，把这份研究介绍改成 editorial 风格。
+使用 $slideloom，把这份研究介绍改成 editorial 风格。
 保留全部数据和页数，图表需要可以继续编辑。
 ```
 
@@ -114,7 +118,7 @@ python3 scripts/inspect_pptx.py deck.pptx > inspection.json
 ## 项目结构
 
 ```text
-pptskill/
+slideloom/
 ├── SKILL.md                   # agent 工作入口
 ├── agents/openai.yaml         # Codex 展示信息
 ├── presets/                   # 三种 Design DNA
